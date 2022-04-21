@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* 1st Process */
+
+
+/* CSS Reset */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Specifying Font Size */
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* Specifying Font Style */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.container1 {
+    max-width: 1200px;
+    width: 70%;
+    margin: auto;
+}
+
+
+/* 2nd process */
+
+
+/* ######################  For DESKTOP  ######################## */
+
+.navbar input[type='checkbox'],
+.navbar .hamnurger-lines {
+    display: none;
+}
+
+.navbar {
+    box-shadow: 0 3px 5px #aaa;
+    position: fixed;
+    /* Z-Index bcz position is fixed and to make it up while scrolling */
+    z-index: 1000;
+    width: 100%;
+    opacity: 0.8;
+    background-color: #fff;
+    color: #000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.logo {
+    order: 1;
+    font-size: 3rem;
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.menu-items li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.menu-items a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #444;
+    transition: 0.3s color ease-in-out;
+}
+
+.menu-items a:hover {
+    color: #117964;
+}
+
+
+/* 5th Process */
+
+
+/* ####################  Shwocase Styling  #################### */
+
+#showcase {
+    height: 100vh;
+    background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.366)), url('/img-20210815T102847Z-001/img/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    /* Height is given 100% so that it takes the height of #showcase */
+    height: 100%;
+    /* Align Items will center horizontally bcz we give flex direction colounm */
+    align-items: center;
+    /* Justify Content will center vertically bcz we give flex direction colounm */
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    /* border-radius: 50px; */
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn-primary {
+    color: black;
+    background-color: cadetblue;
+    margin-top: 1em;
+}
+
+.showcase-container h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.showcase-container p {
+    font-size: 1.9rem;
+}
+
+.btn-primary:hover {
+    outline: 1px solid black;
+    background-color: transparent;
+}
+
+
+/* 7th Process */
+
+
+/* #######################  About Styling  ########################## */
+
+.about {
+    padding: 50px 0;
+}
+
+.about .small {
+    font-size: 2.6rem;
+}
+
+.about h2 {
+    font-size: 3.2rem;
+}
+
+.about p {
+    font-size: 1.6rem;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #cfcfcff7;
+}
+
+.about-img {
+    flex: 1 1 400px;
+    padding: 30px;
+}
+
+.about-text {
+    flex: 1 1 400px;
+    padding: 40px;
+}
+
+.about-img img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    /* object-fit: cover;
+    object-position: right; */
+}
+
+
+/* ##########################  Types OF FOOD  ###################### */
+
+.types {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.types h2 {
+    font-size: 2.6rem;
+}
+
+.type-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imge {
+    margin: 5px;
+}
+
+.imge img {
+    width: 215px;
+    height: 200px;
+    padding: 5px 15px;
+}
+
+.type-img1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(212, 212, 212);
+}
+
+.type-img2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(212, 212, 212);
+}
+
+.type-img3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(212, 212, 212);
+}
+
+.button {
+    font-size: 1.6rem;
+    border: 2px solid cadetblue;
+    border-radius: 40px 40px 40px 40px;
+    background-color: rgb(252, 252, 252);
+    color: black;
+    margin: 1em;
+}
+
+
+/* ######################### Contact Form ############################## */
+
+.contactform {
+    font-size: 16px;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: cadetblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* Add a background color and some padding around the form */
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 53, 53);
+    height: 100px;
+}
+
+.footer-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+}
